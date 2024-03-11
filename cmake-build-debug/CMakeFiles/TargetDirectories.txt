@@ -1,0 +1,3 @@
+F:/Coding/rpg-inventory-revamp/cmake-build-debug/CMakeFiles/rpg_inventory_revamp.dir
+F:/Coding/rpg-inventory-revamp/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/Coding/rpg-inventory-revamp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
