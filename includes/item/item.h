@@ -3,14 +3,7 @@
 
 #include <iostream>
 #include <utility>
-
-enum class ItemRarity {
-  COMMON,
-  RARE,
-  ENCHANTED,
-  ANCIENT,
-  MYTHICAL
-};
+#include "rarity.h"
 
 class Item {
   std::string name;

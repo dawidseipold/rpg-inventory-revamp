@@ -1,7 +1,6 @@
 # ninja log v5
-1	542	7318775040550593	CMakeFiles/rpg_inventory_revamp.dir/main.cpp.obj	d70b08882b888092
-544	683	7318775041946863	rpg_inventory_revamp.exe	81444b4c12a63795
-3	1495	7318784183049528	CMakeFiles/rpg_inventory_revamp.dir/main.cpp.obj	d70b08882b888092
-1495	1696	7318784185054175	rpg_inventory_revamp.exe	81444b4c12a63795
 3	1395	7318785896316337	CMakeFiles/rpg_inventory_revamp.dir/main.cpp.obj	d70b08882b888092
 1395	1614	7318785898500509	rpg_inventory_revamp.exe	81444b4c12a63795
+3	1012	7318830946355569	CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/stats-helpers.cpp.obj	3dfca87dd3fa9798
+6	1704	7318830953227212	CMakeFiles/rpg_inventory_revamp.dir/main.cpp.obj	d70b08882b888092
+1704	1971	7318830955910033	rpg_inventory_revamp.exe	899314837b991e5e

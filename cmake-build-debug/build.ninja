@@ -55,6 +55,12 @@ build CMakeFiles/rpg_inventory_revamp.dir/main.cpp.obj: CXX_COMPILER__rpg_invent
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir
 
+build CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/stats-helpers.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/item/weapon/stats-helpers.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
+  DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\item\weapon\stats-helpers.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
+  OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\item\weapon
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target rpg_inventory_revamp
@@ -63,7 +69,7 @@ build CMakeFiles/rpg_inventory_revamp.dir/main.cpp.obj: CXX_COMPILER__rpg_invent
 #############################################
 # Link the executable rpg_inventory_revamp.exe
 
-build rpg_inventory_revamp.exe: CXX_EXECUTABLE_LINKER__rpg_inventory_revamp_Debug CMakeFiles/rpg_inventory_revamp.dir/main.cpp.obj
+build rpg_inventory_revamp.exe: CXX_EXECUTABLE_LINKER__rpg_inventory_revamp_Debug CMakeFiles/rpg_inventory_revamp.dir/main.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/stats-helpers.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir

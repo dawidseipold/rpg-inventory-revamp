@@ -1,6 +1,7 @@
 #ifndef RPG_INVENTORY_REVAMP_AXE_H
 #define RPG_INVENTORY_REVAMP_AXE_H
 
+#include <random>
 #include "../melee.h"
 
 class Axe : public Melee {
@@ -21,7 +22,9 @@ public:
     int length,
     int attackSpeed,
     DamageType damageType
-  ) : Melee(name, description, value, weight, rarity, minDamage, maxDamage, criticalRate, criticalDamage, accuracy, influence, range, length, attackSpeed, damageType) {}
+  ) : Melee(name, description, value, weight, rarity, minDamage, maxDamage, criticalRate, criticalDamage, accuracy, influence, range, length, attackSpeed, damageType) {
+
+  }
 };
 
 #endif //RPG_INVENTORY_REVAMP_AXE_H
