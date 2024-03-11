@@ -10,9 +10,10 @@ class Item {
   std::string description;
   int value;
   int weight;
-  ItemRarity rarity;
 
-  public:
+protected:
+  ItemRarity rarity;
+public:
     Item(
       std::string name,
       std::string description,

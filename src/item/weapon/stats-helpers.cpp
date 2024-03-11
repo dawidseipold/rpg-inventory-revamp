@@ -1,46 +1,32 @@
 #include "../../../includes/item/weapon/stats-helpers.h"
+#include "../../../includes/item/rarity.h"
 
 #include <random>
-#include <limits>
-#include <stdexcept>
 
-int calculateMinDamage (ItemRarity rarity, std::pair<int, int> range) {
-  if (range.first > range.second) {
-    throw std::invalid_argument("Invalid range: minimal damage is greater than maximal damage.");
-  }
-
-  double rarityMultiplier;
-
+std::pair<double, double> getMultipliersBasedOnRarity(ItemRarity rarity) {
   switch (rarity) {
     case ItemRarity::COMMON:
-      rarityMultiplier = 0.2;
-
-      break;
+      return {0.0, 0.8};
     case ItemRarity::RARE:
-      rarityMultiplier = 0.4;
-
-      break;
+      return {0.2, 0.6};
     case ItemRarity::ENCHANTED:
-      rarityMultiplier = 0.6;
-
-      break;
+      return {0.4, 0.4};
     case ItemRarity::ANCIENT:
-      rarityMultiplier = 0.8;
-
-      break;
+      return {0.6, 0.2};
     case ItemRarity::MYTHICAL:
-      rarityMultiplier = 1.0;
-
-      break;
+      return {0.8, 0.0};
   }
+}
 
-  double damageRange = (range.second - range.first) * rarityMultiplier;
+int getRandomNumberFromRangeBasedOnRarity(ItemRarity rarity, std::pair<int, int> range) {
+  auto [minMultiplier, maxMultiplier] = getMultipliersBasedOnRarity(rarity);
 
-  std::random_device randomDevice;
-  std::mt19937 gen(randomDevice());
-  std::uniform_int_distribution<int> distribution(range.first, static_cast<int>(range.first + damageRange));
+  double min = range.first + ((range.second - range.first) * minMultiplier);
+  double max = range.second - ((range.second - range.first) * maxMultiplier);
 
-  int minDamage = distribution(gen);
+  std::random_device rd;
+  std::mt19937 gen(rd());
+  std::uniform_int_distribution<int> dist(static_cast<int>(min), static_cast<int>(max));
 
-  return std::max(minDamage, range.first);
+  return dist(gen);
 }

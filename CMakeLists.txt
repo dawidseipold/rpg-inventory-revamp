@@ -18,4 +18,5 @@ add_executable(rpg_inventory_revamp main.cpp
         includes/item/weapon/ranged/models/pistol.h
         includes/item/weapon/stats-helpers.h
         includes/item/rarity.h
-        src/item/weapon/stats-helpers.cpp)
+        src/item/weapon/stats-helpers.cpp
+        src/item/weapon/melee/melee.cpp)

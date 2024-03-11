@@ -4,6 +4,6 @@
 #include <utility>
 #include "../rarity.h"
 
-int calculateMinDamage(ItemRarity rarity, std::pair<int, int> range);
+int getRandomNumberFromRangeBasedOnRarity(ItemRarity rarity, std::pair<int, int> range);
 
 #endif //RPG_INVENTORY_REVAMP_STATS_HELPERS_H

@@ -7,15 +7,16 @@
 #include "../influence.h"
 
 class Weapon : public Item {
-  int minDamage;
-  int maxDamage;
   int criticalRate;
   int criticalDamage;
   int accuracy;
   Influence influence;
   int range;
 
-  public:
+protected:
+  int minDamage;
+  int maxDamage;
+public:
     Weapon(
       const std::string& name,
       const std::string& description,

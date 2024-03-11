@@ -37,6 +37,8 @@ class Melee : public Weapon {
         length(length),
         attackSpeed(attackSpeed),
         damageType(damageType) {}
+
+  [[nodiscard]] std::pair<int, int> getDamageRange() const;
 };
 
 #endif //RPG_INVENTORY_REVAMP_MELEE_H

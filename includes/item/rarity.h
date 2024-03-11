@@ -9,4 +9,5 @@ enum class ItemRarity {
   MYTHICAL
 };
 
+
 #endif //RPG_INVENTORY_REVAMP_RARITY_H

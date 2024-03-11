@@ -3,6 +3,7 @@
 
 #include <random>
 #include "../melee.h"
+#include "../../stats-helpers.h"
 
 class Axe : public Melee {
 public:
@@ -12,8 +13,6 @@ public:
     int value,
     int weight,
     ItemRarity rarity,
-    int minDamage,
-    int maxDamage,
     int criticalRate,
     int criticalDamage,
     int accuracy,
@@ -23,7 +22,8 @@ public:
     int attackSpeed,
     DamageType damageType
   ) : Melee(name, description, value, weight, rarity, minDamage, maxDamage, criticalRate, criticalDamage, accuracy, influence, range, length, attackSpeed, damageType) {
-
+    minDamage = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(40, 120));
+    maxDamage = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(160, 270));
   }
 };
 
