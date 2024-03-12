@@ -4,10 +4,11 @@
 #include "../weapon.h"
 
 class Ranged : public Weapon {
-  int rateOfFire;
+protected:
   int projectileSpeed;
   int ammoCapacity;
   int spread;
+  int rateOfFire;
 
 public:
   Ranged(
@@ -16,24 +17,23 @@ public:
     int value,
     int weight,
     ItemRarity rarity,
-    int minDamage,
-    int maxDamage,
-    int criticalRate,
-    int criticalDamage,
-    int accuracy,
+
+    // Weapon-specific attributes
     Influence influence,
-    int range,
 
     // Ranged-specific attributes
-    int rateOfFire,
-    int projectileSpeed,
-    int ammoCapacity,
-    int spread
-    ) : Weapon(name, description, value, weight, rarity, minDamage, maxDamage, criticalRate, criticalDamage, accuracy, influence, range),
-        rateOfFire(rateOfFire),
-        projectileSpeed(projectileSpeed),
-        ammoCapacity(ammoCapacity),
-        spread(spread) {}
+    int ammoCapacity
+    ) : Weapon(name, description, value, weight, rarity, influence),
+        ammoCapacity(ammoCapacity) {
+      projectileSpeed = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(100, 200));
+      rateOfFire = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(1, 10));
+      spread = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(1, 10));
+  }
+
+  [[nodiscard]] int getProjectileSpeed() const;
+  [[nodiscard]] int getAmmoCapacity() const;
+  [[nodiscard]] int getSpread() const;
+  [[nodiscard]] int getRateOfFire() const;
 };
 
 #endif //RPG_INVENTORY_REVAMP_RANGED_H

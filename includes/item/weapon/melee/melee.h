@@ -21,24 +21,22 @@ class Melee : public Weapon {
       int value,
       int weight,
       ItemRarity rarity,
-      int minDamage,
-      int maxDamage,
-      int criticalRate,
-      int criticalDamage,
-      int accuracy,
+
+      // Weapon-specific attributes
       Influence influence,
-      int range,
 
       // Melee-specific attributes
       int length,
-      int attackSpeed,
       DamageType damageType
-    ) : Weapon(name, description, value, weight, rarity, minDamage, maxDamage, criticalRate, criticalDamage, accuracy, influence, range),
+    ) : Weapon(name, description, value, weight, rarity, influence),
         length(length),
-        attackSpeed(attackSpeed),
-        damageType(damageType) {}
+        damageType(damageType) {
+      attackSpeed = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(10, 20));
+    }
 
-  [[nodiscard]] std::pair<int, int> getDamageRange() const;
+    [[nodiscard]] int getLength() const;
+    [[nodiscard]] int getAttackSpeed() const;
+    [[nodiscard]] DamageType getDamageType() const;
 };
 
 #endif //RPG_INVENTORY_REVAMP_MELEE_H

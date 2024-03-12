@@ -19,4 +19,14 @@ add_executable(rpg_inventory_revamp main.cpp
         includes/item/weapon/stats-helpers.h
         includes/item/rarity.h
         src/item/weapon/stats-helpers.cpp
-        src/item/weapon/melee/melee.cpp)
+        src/item/weapon/melee/melee.cpp
+        src/item/weapon/weapon.cpp
+        src/item/weapon/ranged/ranged.cpp
+        src/menu.cpp
+        includes/menu.h
+        includes/character/character.h
+        includes/character/limited-stat.h
+        includes/character/character-class.h
+        src/character/character.cpp
+        src/character/limited-stat.cpp
+)

@@ -1,30 +1,28 @@
 #include <iostream>
 #include <format>
-#include "includes/item/rarity.h"
-#include "includes/item/weapon/stats-helpers.h"
-#include "includes/item/weapon/melee/models/axe.h"
+#include "includes/menu.h"
+#include "includes/character/character-class.h"
+#include "includes/character/character.h"
 
 
 int main() {
-  Axe axe(
-    "Axe",
-    "A simple axe",
-    100,
-    10,
-    ItemRarity::MYTHICAL,
-    10,
-    20,
-    80,
-    Influence::NONE,
-    1,
-    1,
-    1,
-    DamageType::SLASH
-  );
+  std::string name;
+  CharacterClass characterClass;
 
-  std::pair<int, int> damageRange = axe.getDamageRange();
+  if (displayStartupMenu() == 2) {
+    std::cout << "Goodbye!" << std::endl;
+    return 0;
+  }
 
-  std::cout << std::format("Minimal damage: {0}, Maximum damage: {1}", damageRange.first, damageRange.second) << std::endl;
+  std::cout << "Welcome to the game!" << std::endl;
+  name = setCharacterName();
+  characterClass = setCharacterClass();
+
+  Character character(name, characterClass);
+
+  std::cout << "Character created!" << std::endl;
+
+  displayMainMenu();
 
   return 0;
 }

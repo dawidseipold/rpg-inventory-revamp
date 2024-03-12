@@ -1,5 +1,13 @@
 #include "../../../../includes/item/weapon/melee/melee.h"
 
-[[nodiscard]] std::pair<int, int> Melee::getDamageRange() const {
-  return std::make_pair(minDamage, maxDamage);
+[[nodiscard]] int Melee::getLength() const {
+  return length;
+}
+
+[[nodiscard]] int Melee::getAttackSpeed() const {
+  return attackSpeed;
+}
+
+[[nodiscard]] DamageType Melee::getDamageType() const {
+  return damageType;
 }

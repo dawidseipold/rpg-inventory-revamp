@@ -29,6 +29,22 @@ public:
     [[nodiscard]] const std::string& getName() const {
       return name;
     }
+
+    [[nodiscard]] const std::string& getDescription() const {
+      return description;
+    }
+
+    [[nodiscard]] int getValue() const {
+      return value;
+    }
+
+    [[nodiscard]] int getWeight() const {
+      return weight;
+    }
+
+    [[nodiscard]] ItemRarity getRarity() const {
+      return rarity;
+    }
 };
 
 #endif //RPG_INVENTORY_REVAMP_ITEM_H

@@ -11,17 +11,16 @@ public:
     int value,
     int weight,
     ItemRarity rarity,
-    int minDamage,
-    int maxDamage,
-    int criticalRate,
-    int criticalDamage,
-    int accuracy,
+
+    // Weapon-specific attributes
     Influence influence,
-    int range,
+
+    // Melee-specific attributes
     int length,
-    int attackSpeed,
     DamageType damageType
-  ) : Melee(name, description, value, weight, rarity, minDamage, maxDamage, criticalRate, criticalDamage, accuracy, influence, range, length, attackSpeed, damageType) {}
+  ) : Melee(name, description, value, weight, rarity, influence, length, damageType) {
+
+  }
 };
 
 #endif //RPG_INVENTORY_REVAMP_HAMMER_H

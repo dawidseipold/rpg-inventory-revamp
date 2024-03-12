@@ -5,41 +5,36 @@
 
 #include "../item.h"
 #include "../influence.h"
+#include "./stats-helpers.h"
 
 class Weapon : public Item {
-  int criticalRate;
-  int criticalDamage;
-  int accuracy;
+private:
   Influence influence;
-  int range;
 
 protected:
+  int accuracy;
   int minDamage;
   int maxDamage;
-public:
-    Weapon(
-      const std::string& name,
-      const std::string& description,
-      int value,
-      int weight,
-      ItemRarity rarity,
 
-      // Weapon-specific attributes
-      int minDamage,
-      int maxDamage,
-      int criticalRate,
-      int criticalDamage,
-      int accuracy,
-      Influence influence,
-      int range
-    ) : Item(name, description, value, weight, rarity),
-        minDamage(minDamage),
-        maxDamage(maxDamage),
-        criticalRate(criticalRate),
-        criticalDamage(criticalDamage),
-        accuracy(accuracy),
-        influence(influence),
-        range(range) {}
+public:
+  Weapon(
+    const std::string& name,
+    const std::string& description,
+    int value,
+    int weight,
+    ItemRarity rarity,
+
+    // Weapon-specific attributes
+    Influence influence
+  ) : Item(name, description, value, weight, rarity),
+    influence(influence) {
+      accuracy = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(50, 100));
+      minDamage = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(40, 120));
+      maxDamage = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(160, 270));
+  }
+
+  [[nodiscard]] std::pair<int, int> getDamageRange() const;
+  [[nodiscard]] int getAccuracy() const;
 };
 
 #endif //RPG_INVENTORY_REVAMP_WEAPON_H
