@@ -22,7 +22,8 @@ int main() {
 
   std::cout << "Character created!" << std::endl;
 
-  displayMainMenu();
+  character.displayCharacter();
 
+  displayMainMenu(character);
   return 0;
 }

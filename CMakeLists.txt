@@ -29,4 +29,8 @@ add_executable(rpg_inventory_revamp main.cpp
         includes/character/character-class.h
         src/character/character.cpp
         src/character/limited-stat.cpp
+        includes/container/container.h
+        includes/container/inventory/inventory.h
+        src/character/character-class.cpp
+        includes/container/chest/chest.h
 )

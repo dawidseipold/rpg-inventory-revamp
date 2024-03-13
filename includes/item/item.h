@@ -24,7 +24,15 @@ public:
         description(std::move(description)),
         value(value),
         weight(weight),
-        rarity(rarity) {}
+        rarity(rarity) {};
+
+    bool operator==(const Item& other) const {
+      return name == other.name &&
+      description == other.description &&
+      value == other.value &&
+      weight == other.weight &&
+      rarity == other.rarity;
+    }
 
     [[nodiscard]] const std::string& getName() const {
       return name;

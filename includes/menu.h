@@ -3,9 +3,11 @@
 
 #include <iostream>
 #include "../includes/character/character-class.h"
+#include "character/character.h"
 
 int displayStartupMenu();
-void displayMainMenu();
+
+bool displayMainMenu(Character& character);
 std::string setCharacterName();
 CharacterClass setCharacterClass();
 
