@@ -24,6 +24,19 @@ class Character {
   void setBaseStats();
 
 public:
+  Character() :
+    health(0, 0),
+    mana(0, 0),
+    strength(0), dexterity(0),
+    intelligence(0),
+    luck(0),
+    experience(0),
+    level(0),
+    characterClass(CharacterClass::WARRIOR),
+    inventory("Inventory", 200) {
+      setBaseStats();
+  }
+
   Character(std::string name,
     CharacterClass characterClass) :
       name(std::move(name)),

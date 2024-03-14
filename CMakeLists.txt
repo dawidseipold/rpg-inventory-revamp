@@ -22,8 +22,8 @@ add_executable(rpg_inventory_revamp main.cpp
         src/item/weapon/melee/melee.cpp
         src/item/weapon/weapon.cpp
         src/item/weapon/ranged/ranged.cpp
-        src/menu.cpp
-        includes/menu.h
+        src/tmenu.cpp
+        includes/tmenu.h
         includes/character/character.h
         includes/character/limited-stat.h
         includes/character/character-class.h
@@ -33,4 +33,10 @@ add_executable(rpg_inventory_revamp main.cpp
         includes/container/inventory/inventory.h
         src/character/character-class.cpp
         includes/container/chest/chest.h
+        includes/menu/menu.h
+        src/menu/menu.cpp
+        src/helpers/input.cpp
+        includes/helpers/input.h
+        includes/utils/startup-menu.h
+        src/utils/startup-menu.cpp
 )
