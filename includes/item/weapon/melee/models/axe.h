@@ -6,20 +6,14 @@
 
 class Axe : public Melee {
 public:
-  Axe(
-    const std::string& name,
-    const std::string& description,
-    int value,
-    int weight,
-    ItemRarity rarity,
+  ~Axe() override = default;
 
-    // Weapon-specific attributes
-    Influence influence,
+  Axe () = default;
 
-    // Melee-specific attributes
+  explicit Axe(
     int length,
     DamageType damageType
-  ) : Melee(name, description, value, weight, rarity, influence, length, damageType) {
+  ) : Melee(length, damageType) {
 
   }
 };

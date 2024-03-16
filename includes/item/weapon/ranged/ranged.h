@@ -5,26 +5,20 @@
 
 class Ranged : public Weapon {
 protected:
-  int projectileSpeed;
-  int ammoCapacity;
-  int spread;
-  int rateOfFire;
+  int projectileSpeed{};
+  int ammoCapacity{};
+  int spread{};
+  int rateOfFire{};
 
 public:
-  Ranged(
-    const std::string& name,
-    const std::string& description,
-    int value,
-    int weight,
-    ItemRarity rarity,
+  ~Ranged() override = default;
 
-    // Weapon-specific attributes
-    Influence influence,
+  Ranged() = default;
 
+  explicit Ranged(
     // Ranged-specific attributes
     int ammoCapacity
-    ) : Weapon(name, description, value, weight, rarity, influence),
-        ammoCapacity(ammoCapacity) {
+    ) : ammoCapacity(ammoCapacity) {
       projectileSpeed = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(100, 200));
       rateOfFire = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(1, 10));
       spread = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(1, 10));

@@ -47,6 +47,7 @@ void Character::displayCharacter() const {
   std::cout << std::format("Class: {0}", displayCharacterClass(characterClass)) << std::endl;
   std::cout << std::format("Level: {0}", level) << std::endl;
   std::cout << std::format("Experience: {0}", experience) << std::endl;
+  std::cout << std::format("Unused skill points: {0}", unusedSkillPoints) << std::endl;
   std::cout << std::format("Gold: {0}", inventory.getGold()) << std::endl;
   std::cout << std::format("Health: {0}", health.getValue()) << std::endl;
   std::cout << std::format("Mana: {0}", mana.getValue()) << std::endl;
@@ -61,6 +62,53 @@ std::string Character::getName() const {
   return name;
 }
 
-Inventory Character::getInventory() {
+CharacterClass Character::getClass() const {
+  return characterClass;
+}
+
+Inventory& Character::getInventory() {
   return inventory;
+}
+
+void Character::useSkillPoints() {
+  if (!unusedSkillPoints) {
+    std::cout << "You don't have any skill points to spend." << std::endl;
+    return;
+  }
+
+  std::cout << "You have " << unusedSkillPoints << " skill points to spend." << std::endl;
+
+  Menu skillMenu("Skill Menu");
+
+  skillMenu.addOption("Strength", [this]() {
+    this->strength++;
+    this->unusedSkillPoints--;
+  });
+
+  skillMenu.addOption("Dexterity", [this]() {
+    this->dexterity++;
+    this->unusedSkillPoints--;
+  });
+
+  skillMenu.addOption("Intelligence", [this]() {
+    this->intelligence++;
+    this->unusedSkillPoints--;
+  });
+
+  skillMenu.addOption("Luck", [this]() {
+    this->luck++;
+    this->unusedSkillPoints--;
+  });
+
+  skillMenu.display();
+}
+
+void Character::addExperience(int experienceToAdd) {
+  this->experience += experienceToAdd;
+
+  while (this->experience >= 100 * level) {
+    this->experience -= 100 * level;
+    level++;
+    unusedSkillPoints += 2;
+  }
 }

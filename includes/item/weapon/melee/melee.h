@@ -10,26 +10,19 @@ enum class DamageType {
 };
 
 class Melee : public Weapon {
-  int length;
-  int attackSpeed;
-  DamageType damageType;
+  int length{};
+  int attackSpeed{};
+  DamageType damageType{};
 
   public:
-    Melee(
-      const std::string& name,
-      const std::string& description,
-      int value,
-      int weight,
-      ItemRarity rarity,
+    ~Melee() override = default;
 
-      // Weapon-specific attributes
-      Influence influence,
+    Melee () = default;
 
-      // Melee-specific attributes
+    explicit Melee(
       int length,
       DamageType damageType
-    ) : Weapon(name, description, value, weight, rarity, influence),
-        length(length),
+    ) : length(length),
         damageType(damageType) {
       attackSpeed = getRandomNumberFromRangeBasedOnRarity(this->rarity, std::pair<int, int>(10, 20));
     }

@@ -5,20 +5,14 @@
 
 class Hammer : public Melee {
 public:
-  Hammer(
-    const std::string& name,
-    const std::string& description,
-    int value,
-    int weight,
-    ItemRarity rarity,
+  ~Hammer() override = default;
 
-    // Weapon-specific attributes
-    Influence influence,
+  Hammer () = default;
 
-    // Melee-specific attributes
+  explicit Hammer(
     int length,
     DamageType damageType
-  ) : Melee(name, description, value, weight, rarity, influence, length, damageType) {
+  ) : Melee(length, damageType) {
 
   }
 };

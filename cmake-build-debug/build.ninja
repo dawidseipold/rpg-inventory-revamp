@@ -79,12 +79,6 @@ build CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/ranged/ranged.cpp.obj:
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\item\weapon\ranged
 
-build CMakeFiles/rpg_inventory_revamp.dir/src/tmenu.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/tmenu.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
-  DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\tmenu.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
-  OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src
-
 build CMakeFiles/rpg_inventory_revamp.dir/src/character/character.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/character/character.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\character\character.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
@@ -121,6 +115,36 @@ build CMakeFiles/rpg_inventory_revamp.dir/src/utils/startup-menu.cpp.obj: CXX_CO
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\utils
 
+build CMakeFiles/rpg_inventory_revamp.dir/src/utils/main-menu.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/utils/main-menu.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
+  DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\utils\main-menu.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
+  OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\utils
+
+build CMakeFiles/rpg_inventory_revamp.dir/src/container/inventory/inventory.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/container/inventory/inventory.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
+  DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\container\inventory\inventory.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
+  OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\container\inventory
+
+build CMakeFiles/rpg_inventory_revamp.dir/src/container/container.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/container/container.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
+  DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\container\container.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
+  OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\container
+
+build CMakeFiles/rpg_inventory_revamp.dir/src/container/chest/chest.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/container/chest/chest.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
+  DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\container\chest\chest.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
+  OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\container\chest
+
+build CMakeFiles/rpg_inventory_revamp.dir/src/item/item.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/item/item.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
+  DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\item\item.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
+  OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\item
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target rpg_inventory_revamp
@@ -129,8 +153,9 @@ build CMakeFiles/rpg_inventory_revamp.dir/src/utils/startup-menu.cpp.obj: CXX_CO
 #############################################
 # Link the executable rpg_inventory_revamp.exe
 
-build rpg_inventory_revamp.exe: CXX_EXECUTABLE_LINKER__rpg_inventory_revamp_Debug CMakeFiles/rpg_inventory_revamp.dir/main.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/stats-helpers.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/melee/melee.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/weapon.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/ranged/ranged.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/tmenu.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/character/character.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/character/limited-stat.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/character/character-class.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/menu/menu.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/helpers/input.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/utils/startup-menu.cpp.obj
+build rpg_inventory_revamp.exe: CXX_EXECUTABLE_LINKER__rpg_inventory_revamp_Debug CMakeFiles/rpg_inventory_revamp.dir/main.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/stats-helpers.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/melee/melee.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/weapon.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/ranged/ranged.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/character/character.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/character/limited-stat.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/character/character-class.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/menu/menu.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/helpers/input.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/utils/startup-menu.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/utils/main-menu.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/container/inventory/inventory.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/container/container.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/container/chest/chest.cpp.obj CMakeFiles/rpg_inventory_revamp.dir/src/item/item.cpp.obj
   FLAGS = -g
+  LINK_FLAGS = -static
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   POST_BUILD = cd .

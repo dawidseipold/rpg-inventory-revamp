@@ -4,7 +4,8 @@ project(rpg_inventory_revamp)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_EXE_LINKER_FLAGS "-static")
 
-add_executable(rpg_inventory_revamp main.cpp
+add_executable(rpg_inventory_revamp
+        main.cpp
         includes/item/item.h
         includes/item/weapon/weapon.h
         includes/item/influence.h
@@ -12,7 +13,6 @@ add_executable(rpg_inventory_revamp main.cpp
         includes/item/weapon/ranged/ranged.h
         includes/item/weapon/melee/models/axe.h
         includes/item/weapon/melee/models/hammer.h
-        includes/item/weapon/melee/models/scythe.h
         includes/item/weapon/melee/models/sword.h
         includes/item/weapon/ranged/models/blunderbuss.h
         includes/item/weapon/ranged/models/cannon.h
@@ -23,8 +23,6 @@ add_executable(rpg_inventory_revamp main.cpp
         src/item/weapon/melee/melee.cpp
         src/item/weapon/weapon.cpp
         src/item/weapon/ranged/ranged.cpp
-        src/tmenu.cpp
-        includes/tmenu.h
         includes/character/character.h
         includes/character/limited-stat.h
         includes/character/character-class.h
@@ -40,4 +38,14 @@ add_executable(rpg_inventory_revamp main.cpp
         includes/helpers/input.h
         includes/utils/startup-menu.h
         src/utils/startup-menu.cpp
+        src/utils/main-menu.cpp
+        includes/utils/main-menu.h
+        src/container/inventory/inventory.cpp
+        src/container/container.cpp
+        includes/world/world.h
+        src/container/chest/chest.cpp
+        src/item/item.cpp
+        includes/item/item-factory.h
+        main.cpp
+        main.cpp
 )

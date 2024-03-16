@@ -8,14 +8,16 @@
 #include "../item/item.h"
 
 class Container {
-  int maxWeight;
   std::vector<Item> items;
 
 protected:
   std::string name;
 
-  int currentWeight;
+  int currentWeight{};
+  int maxWeight{};
 public:
+  Container() = default;
+
   Container(
     std::string name,
     int maxWeight
@@ -23,42 +25,22 @@ public:
     currentWeight = 0;
   }
 
-  void addItem(const Item& item) {
-    if (currentWeight + item.getWeight() <= maxWeight) {
-      currentWeight += item.getWeight();
-      items.push_back(item);
-    } else {
-      std::cout << "The container is full!" << std::endl;
-    }
-  }
+  //  Create
+  void addItem(const Item& item);
 
-  void removeItem(const Item& item) {
-    auto itemToRemove = std::remove(items.begin(), items.end(), item);
+  //  Read
+  [[maybe_unused]] [[nodiscard]] const std::vector<Item>& getItems() const;
+  [[maybe_unused]] [[nodiscard]] int getCurrentWeight() const;
+  [[maybe_unused]] [[nodiscard]] int getMaxWeight() const;
+  [[maybe_unused]] [[nodiscard]] std::string getName();
 
-    items.erase(itemToRemove, items.end());
+  void displayItems() const;
 
-    currentWeight -= item.getWeight();
-  };
+  //  Update
+  void setMaxWeight(int newMaxWeight);
 
-  void setMaxWeight(int newMaxWeight) {
-    Container::maxWeight = newMaxWeight;
-  };
-
-  [[maybe_unused]] [[nodiscard]] const std::vector<Item>& getItems() const {
-    return items;
-  };
-
-  [[maybe_unused]] [[nodiscard]] int getCurrentWeight() const {
-    return currentWeight;
-  };
-
-  [[maybe_unused]] [[nodiscard]] int getMaxWeight() const {
-    return maxWeight;
-  };
-
-  [[maybe_unused]] [[nodiscard]] std::string getName() {
-    return name;
-  };
+  //  Delete
+  void removeItem(const Item& item);
 };
 
 #endif //RPG_INVENTORY_REVAMP_CONTAINER_H

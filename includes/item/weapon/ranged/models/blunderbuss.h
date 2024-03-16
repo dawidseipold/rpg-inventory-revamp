@@ -4,27 +4,14 @@
 #include "../ranged.h"
 
 class Blunderbuss : public Ranged {
-private:
-
 public:
-  Blunderbuss(
-    const std::string& name,
-    const std::string& description,
-    int value,
-    int weight,
-    ItemRarity rarity,
-    int minDamage,
-    int maxDamage,
-    int criticalRate,
-    int criticalDamage,
-    int accuracy,
-    Influence influence,
-    int range,
-    int rateOfFire,
-    int projectileSpeed,
-    int ammoCapacity,
-    int spread
-  ) : Ranged(name, description, value, weight, rarity, minDamage, maxDamage, criticalRate, criticalDamage, accuracy, influence, range, rateOfFire, projectileSpeed, ammoCapacity, spread) {}
+  ~Blunderbuss() override = default;
+
+  Blunderbuss() = default;
+
+  explicit Blunderbuss(
+    int ammoCapacity
+  ) : Ranged(ammoCapacity) {}
 };
 
 #endif //RPG_INVENTORY_REVAMP_BLUNDERBUSS_H

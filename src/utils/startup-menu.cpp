@@ -3,40 +3,48 @@
 #include "../../includes/character/character.h"
 #include "../../includes/helpers/input.h"
 
-void displayNewGame(Character* character) {
+#include <format>
+
+Character displayNewGameAndGetCharacter() {
   std::cout << "Welcome to the game!" << std::endl;
 
   auto name = getValidInput<std::string>("Choose your name: ");
   Menu subMenu("Choose your class...");
 
-  subMenu.addOption("Warrior", [&name, &character]() {
-    *character = *new Character(name, CharacterClass::WARRIOR);
+  Inventory inventory(std::format("{}'s Inventory", name), 200);
+
+  Character character;
+
+  subMenu.addOption("Warrior", [&name, &inventory, &character]() {
+    character = Character(name, CharacterClass::WARRIOR, inventory);
   });
 
-  subMenu.addOption("Mage", [&name, &character]() {
-    *character = *new Character(name, CharacterClass::MAGE);
+  subMenu.addOption("Mage", [&name, &inventory, &character]() {
+    character = Character(name, CharacterClass::MAGE, inventory);
   });
 
-  subMenu.addOption("Ranger", [&name, &character]() {
-    *character = *new Character(name, CharacterClass::RANGER);
+  subMenu.addOption("Ranger", [&name, &inventory, &character]() {
+    character = Character(name, CharacterClass::RANGER, inventory);
   });
 
-  subMenu.addOption("Cleric", [&name, &character]() {
-    *character = *new Character(name, CharacterClass::CLERIC);
+  subMenu.addOption("Cleric", [&name, &inventory, &character]() {
+    character = Character(name, CharacterClass::CLERIC, inventory);
   });
 
-  subMenu.Display();
+  subMenu.display();
+
+  return character;
 }
 
-void displayStartupMenu(Character* character) {
+void displayStartupMenu(Character& character) {
   Menu startMenu("Main Menu");
 
   startMenu.addOption("New Game", [&character](){
-    displayNewGame(character);
+    character = displayNewGameAndGetCharacter();
   });
 
-  startMenu.addOption("Load Game", [](){ std::cout << "Load game!" << std::endl; });
+  startMenu.addOption("Load Game", [](){ std::cout << "Loading a game from the save file is PLANNED..." << std::endl; });
   startMenu.addOption("Exit", [](){ std::cout << "Goodbye!" << std::endl; return 0; });
 
-  startMenu.Display();
+  startMenu.display();
 }

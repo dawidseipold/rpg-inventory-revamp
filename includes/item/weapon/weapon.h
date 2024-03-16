@@ -17,6 +17,10 @@ protected:
   int maxDamage;
 
 public:
+  ~Weapon() override = default;
+
+  Weapon() = default;
+
   Weapon(
     const std::string& name,
     const std::string& description,

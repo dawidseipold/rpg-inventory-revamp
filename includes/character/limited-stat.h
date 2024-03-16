@@ -4,10 +4,12 @@
 #include <iostream>
 
 class LimitedStat {
-  int value;
-  int cap;
+  int value{};
+  int cap{};
 
 public:
+  LimitedStat() = default;
+
   explicit LimitedStat(
     int value,
     int cap

@@ -14,6 +14,10 @@ class Item {
 protected:
   ItemRarity rarity;
 public:
+    virtual ~Item() = default;
+    
+    Item () = default;
+
     Item(
       std::string name,
       std::string description,
@@ -34,25 +38,15 @@ public:
       rarity == other.rarity;
     }
 
-    [[nodiscard]] const std::string& getName() const {
-      return name;
-    }
+    // Read
+    [[nodiscard]] const std::string& getName() const;
+    [[nodiscard]] const std::string& getDescription() const;
+    [[nodiscard]] int getValue() const;
+    [[nodiscard]] int getWeight() const;
 
-    [[nodiscard]] const std::string& getDescription() const {
-      return description;
-    }
+    [[nodiscard]] ItemRarity getRarity() const;
 
-    [[nodiscard]] int getValue() const {
-      return value;
-    }
-
-    [[nodiscard]] int getWeight() const {
-      return weight;
-    }
-
-    [[nodiscard]] ItemRarity getRarity() const {
-      return rarity;
-    }
+    void displayProperties() const;
 };
 
 #endif //RPG_INVENTORY_REVAMP_ITEM_H

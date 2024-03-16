@@ -15,7 +15,12 @@ public :
 
   void addOption(const std::string& option, const std::function<void()>& action);
 
-  void Display();
+  void exit();
+
+  void display();
+  static void displayError(const std::string &message = "Invalid input!");
+
+  bool shouldExit = false;
 };
 
 #endif //RPG_INVENTORY_REVAMP_MENU_H
