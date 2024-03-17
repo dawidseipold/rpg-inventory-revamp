@@ -27,3 +27,25 @@ const std::string &Item::getDescription() const {
 const std::string &Item::getName() const {
   return name;
 }
+
+void Item::setName(const std::string &newName) {
+  this->name = newName;
+}
+
+void Item::setDescription(const std::string &newDescription) {
+  this->description = newDescription;
+}
+
+void Item::setValue(int newValue) {
+  this->value = newValue;
+}
+
+void Item::setWeight(int newWeight) {
+  this->weight = newWeight;
+}
+
+void Item::setRarity(ItemRarity newRarity) {
+  this->rarity = newRarity;
+}
+
+

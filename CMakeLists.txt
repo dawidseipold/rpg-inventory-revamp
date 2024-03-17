@@ -4,6 +4,15 @@ project(rpg_inventory_revamp)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_EXE_LINKER_FLAGS "-static")
 
+include(FetchContent)
+
+FetchContent_Declare(
+    json
+    URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz
+)
+FetchContent_MakeAvailable(json)
+
+
 add_executable(rpg_inventory_revamp
         main.cpp
         includes/item/item.h
@@ -49,3 +58,5 @@ add_executable(rpg_inventory_revamp
         main.cpp
         main.cpp
 )
+
+target_link_libraries(rpg_inventory_revamp PRIVATE nlohmann_json::nlohmann_json)

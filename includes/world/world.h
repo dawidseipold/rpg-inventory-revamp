@@ -27,7 +27,6 @@ class World {
 
   //  Delete
   void removeChest(const Chest& chest) {
-//    chests.erase(std::remove(chests.begin(), chests.end(), chest), chests.end());
 
     for (auto it = chests.begin(); it != chests.end(); ++it) {
       if (**it == chest) {

@@ -1,0 +1,31 @@
+{
+  "weapon": {
+    "melee": [
+      "Axe",
+      "Hammer",
+      "Sword"
+    ],
+    "ranged": [
+      "Blunderbuss",
+      "Cannon",
+      "Pistol"
+    ]
+  },
+  "armor": {
+    "light": [
+      "Leather",
+      "Padded",
+      "Studded"
+    ],
+    "medium": [
+      "Chain",
+      "Scale",
+      "Breastplate"
+    ],
+    "heavy": [
+      "Plate",
+      "Half-Plate",
+      "Full-Plate"
+    ]
+  }
+}

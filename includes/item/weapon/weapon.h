@@ -12,9 +12,9 @@ private:
   Influence influence;
 
 protected:
-  int accuracy;
-  int minDamage;
-  int maxDamage;
+  int accuracy{};
+  int minDamage{};
+  int maxDamage{};
 
 public:
   ~Weapon() override = default;

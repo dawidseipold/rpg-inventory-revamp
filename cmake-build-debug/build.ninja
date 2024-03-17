@@ -52,96 +52,112 @@ build cmake_object_order_depends_target_rpg_inventory_revamp: phony || CMakeFile
 build CMakeFiles/rpg_inventory_revamp.dir/main.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/main.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/stats-helpers.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/item/weapon/stats-helpers.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\item\weapon\stats-helpers.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\item\weapon
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/melee/melee.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/item/weapon/melee/melee.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\item\weapon\melee\melee.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\item\weapon\melee
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/weapon.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/item/weapon/weapon.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\item\weapon\weapon.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\item\weapon
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/item/weapon/ranged/ranged.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/item/weapon/ranged/ranged.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\item\weapon\ranged\ranged.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\item\weapon\ranged
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/character/character.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/character/character.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\character\character.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\character
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/character/limited-stat.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/character/limited-stat.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\character\limited-stat.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\character
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/character/character-class.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/character/character-class.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\character\character-class.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\character
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/menu/menu.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/menu/menu.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\menu\menu.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\menu
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/helpers/input.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/helpers/input.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\helpers\input.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\helpers
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/utils/startup-menu.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/utils/startup-menu.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\utils\startup-menu.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\utils
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/utils/main-menu.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/utils/main-menu.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\utils\main-menu.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\utils
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/container/inventory/inventory.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/container/inventory/inventory.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\container\inventory\inventory.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\container\inventory
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/container/container.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/container/container.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\container\container.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\container
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/container/chest/chest.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/container/chest/chest.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\container\chest\chest.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\container\chest
 
 build CMakeFiles/rpg_inventory_revamp.dir/src/item/item.cpp.obj: CXX_COMPILER__rpg_inventory_revamp_unscanned_Debug F$:/Coding/rpg-inventory-revamp/src/item/item.cpp || cmake_object_order_depends_target_rpg_inventory_revamp
   DEP_FILE = CMakeFiles\rpg_inventory_revamp.dir\src\item\item.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IF:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-src/include
   OBJECT_DIR = CMakeFiles\rpg_inventory_revamp.dir
   OBJECT_FILE_DIR = CMakeFiles\rpg_inventory_revamp.dir\src\item
 
@@ -188,6 +204,34 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# F:/Coding/rpg-inventory-revamp/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/json-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D F:\Coding\rpg-inventory-revamp\cmake-build-debug\_deps\json-build && "C:\Software\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/json-build/edit_cache: phony _deps/json-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/json-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D F:\Coding\rpg-inventory-revamp\cmake-build-debug\_deps\json-build && "C:\Software\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SF:\Coding\rpg-inventory-revamp -BF:\Coding\rpg-inventory-revamp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/json-build/rebuild_cache: phony _deps/json-build/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build rpg_inventory_revamp: phony rpg_inventory_revamp.exe
@@ -200,7 +244,14 @@ build rpg_inventory_revamp: phony rpg_inventory_revamp.exe
 #############################################
 # Folder: F:/Coding/rpg-inventory-revamp/cmake-build-debug
 
-build all: phony rpg_inventory_revamp.exe
+build all: phony rpg_inventory_revamp.exe _deps/json-build/all
+
+# =============================================================================
+
+#############################################
+# Folder: F:/Coding/rpg-inventory-revamp/cmake-build-debug/_deps/json-build
+
+build _deps/json-build/all: phony
 
 # =============================================================================
 # Built-in targets
@@ -209,14 +260,14 @@ build all: phony rpg_inventory_revamp.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake F$:/Coding/rpg-inventory-revamp/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake F$:/Coding/rpg-inventory-revamp/CMakeLists.txt _deps/json-src/CMakeLists.txt _deps/json-src/cmake/config.cmake.in _deps/json-src/cmake/nlohmann_jsonConfigVersion.cmake.in _deps/json-src/cmake/pkg-config.pc.in
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake F$:/Coding/rpg-inventory-revamp/CMakeLists.txt: phony
+build C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Software/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake F$:/Coding/rpg-inventory-revamp/CMakeLists.txt _deps/json-src/CMakeLists.txt _deps/json-src/cmake/config.cmake.in _deps/json-src/cmake/nlohmann_jsonConfigVersion.cmake.in _deps/json-src/cmake/pkg-config.pc.in: phony
 
 
 #############################################

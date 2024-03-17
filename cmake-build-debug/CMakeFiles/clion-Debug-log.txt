@@ -1,13 +1,4 @@
 "C:\Software\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Software/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S F:\Coding\rpg-inventory-revamp -B F:\Coding\rpg-inventory-revamp\cmake-build-debug
 -- Configuring done (0.1s)
-CMake Error at CMakeLists.txt:7 (add_executable):
-  Cannot find source file:
-
-    rpg_inventory_revamp/main.cpp
-
-
-CMake Error at CMakeLists.txt:7 (add_executable):
-  No SOURCES given to target: rpg_inventory_revamp
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done (0.0s)
+-- Build files have been written to: F:/Coding/rpg-inventory-revamp/cmake-build-debug

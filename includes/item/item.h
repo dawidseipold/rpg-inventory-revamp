@@ -43,10 +43,16 @@ public:
     [[nodiscard]] const std::string& getDescription() const;
     [[nodiscard]] int getValue() const;
     [[nodiscard]] int getWeight() const;
-
     [[nodiscard]] ItemRarity getRarity() const;
 
     void displayProperties() const;
+
+    // Update
+    void setName(const std::string& newName);
+    void setDescription(const std::string& newDescription);
+    void setValue(int newValue);
+    void setWeight(int newWeight);
+    void setRarity(ItemRarity newRarity);
 };
 
 #endif //RPG_INVENTORY_REVAMP_ITEM_H

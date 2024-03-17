@@ -1,53 +1,84 @@
 #include "../../includes/utils/main-menu.h"
 #include "../../includes/helpers/input.h"
-//#include "../../includes/item/item-factory.h"
+#include "../../includes/item/item-factory.h"
+#include "../../lib/json.hpp"
+//#include <nlohmann/json.hpp>
 
-//void displayItemCreationMenu(Chest& chest) {
-//  Menu itemCreationMenu("Item Creation Menu");
-//
-//  for (auto& [category, subCategories]: ItemFactory::getItems()) {
-//    itemCreationMenu.addOption(category, [subCategories, &chest, category]() {
-//      Menu subCategoryMenu("Sub Category Menu");
-//
-//      for (auto& [subCategory, models] : subCategories) {
-//        subCategoryMenu.addOption(subCategory, [models, &chest, category, subCategory]() {
-//          Menu modelMenu("Model Menu");
-//
-//          for (const auto& model : models) {
-//            modelMenu.addOption(model, [model, &chest, category, subCategory]() {
-//              auto parameters = ItemFactory::getConstructorParameters(category, subCategory, model);
-//
-//              std::map<std::string, std::string> userInput;
-//
-//              for (const auto& [name, type] : parameters) {
-//                std::cout << "Enter " << name << " (" << type << "): ";
-//                std::string input;
-//                std::cin >> input;
-//                userInput[name] = input;
-//              }
-//
-//              auto item = ItemFactory::createItem(category, subCategory, model, userInput);
-//              chest.addItem((const Item &) item);
-//              std::cout << "Added " << model << " to the chest." << std::endl;
-//            });
-//          }
-//
-//          while (!modelMenu.shouldExit) {
-//            modelMenu.display();
-//          }
-//        });
-//      }
-//
-//      while (!subCategoryMenu.shouldExit) {
-//        subCategoryMenu.display();
-//      }
-//    });
-//  }
-//
-//  while (!itemCreationMenu.shouldExit) {
-//    itemCreationMenu.display();
-//  }
-//}
+using json = nlohmann::json;
+
+void setItemProperties(std::unique_ptr<Item>* item) {
+  auto name = getValidInput<std::string>("Enter the name of the item: ");
+  auto description = getValidInput<std::string>("Enter the description of the item: ");
+  auto value = getValidInput<int>("Enter the value of the item: ");
+  auto weight = getValidInput<int>("Enter the weight of the item: ");
+  ItemRarity rarity = static_cast<ItemRarity>(getValidInput<int>("Enter the rarity of the item: "));
+
+  (*item)->setName(name);
+  (*item)->setDescription(description);
+  (*item)->setValue(value);
+  (*item)->setWeight(weight);
+  (*item)->setRarity(rarity);
+}
+
+void displayItemCreationMenu(Chest& chest) {
+  json itemsJson = {
+    {"Weapon", {
+      {"Melee", {
+        "Axe",
+        "Hammer",
+        "Sword"
+      }},
+      {"Ranged", {
+        "Blunderbuss",
+        "Cannon",
+        "Pistol"
+      }}
+    }}
+  };
+
+  Menu categoryMenu("Item Creation Menu");
+
+  for (auto& [category, categoryItems]: itemsJson.items()) {
+    categoryMenu.addOption(category, [&category, &chest, &categoryItems, &categoryMenu]() {
+      Menu subCategoryMenu(std::format("{} Menu", category));
+
+      for (auto& [subCategory, subCategoryItems]: categoryItems.items()) {
+        subCategoryMenu.addOption(subCategory, [&subCategory, &subCategoryItems, &chest, &subCategoryMenu]() {
+          Menu modelMenu(std::format("{} Menu", subCategory));
+
+          for (const auto& model : subCategoryItems) {
+            modelMenu.addOption(model, [&model, &chest, &modelMenu]() {
+              std::unique_ptr<Item> item = ItemFactory::createItem(model);
+
+              setItemProperties(&item);
+
+              chest.addItem(*item);
+              std::cout << "Item added to chest!" << std::endl;
+
+              modelMenu.exit();
+            });
+          }
+
+          subCategoryMenu.exit();
+
+          while (!modelMenu.shouldExit) {
+            modelMenu.display();
+          }
+        });
+      }
+
+      categoryMenu.exit();
+
+      while (!subCategoryMenu.shouldExit) {
+        subCategoryMenu.display();
+      }
+    });
+  }
+
+  while (!categoryMenu.shouldExit) {
+    categoryMenu.display();
+  }
+}
 
 Chest& getChestFromSelection(World* world) {
   Menu chestSelectionMenu("Chest Edit Menu");
@@ -151,6 +182,10 @@ void displayWorldMenu(World* world) {
 
       chestDisplayMenu.addOption(chest.getName(), [&chest](){
           chest.displayProperties();
+
+          for (const Item& item : chest.getItems()) {
+            item.displayProperties();
+          }
       });
     }
 
@@ -180,10 +215,10 @@ void displayWorldMenu(World* world) {
       selectedChest.setMaxWeight(newCapacity);
     });
 
-    chestEditMenu.addOption("Add item to chest", [](){
-      // displayItemCreationMenu(selectedChest);
+    chestEditMenu.addOption("Add item to chest", [&selectedChest](){
+      displayItemCreationMenu(selectedChest);
 
-      std::cout << "Item Creation is WORK IN PROGRESS..." << std::endl;
+//      std::cout << "Item Creation is WORK IN PROGRESS..." << std::endl;
     });
 
     chestEditMenu.addOption("Remove item from chest", [](){
